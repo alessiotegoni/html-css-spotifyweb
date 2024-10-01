@@ -58,14 +58,30 @@
               <strong class="muted-text">Crea playlist</strong>
             </div>
             <ul class="playlists__list">
-              <li class="playlist muted-text">Nome Playlist</li>
-              <li class="playlist muted-text">Nome Playlist</li>
-              <li class="playlist muted-text">Nome Playlist</li>
-              <li class="playlist muted-text">Nome Playlist</li>
-              <li class="playlist muted-text">Nome Playlist</li>
-              <li class="playlist muted-text">Nome Playlist</li>
-              <li class="playlist muted-text">Nome Playlist</li>
-              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
+              <li class="playlist">
+                <button class="btn muted-text">Nome Playlist</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -82,7 +98,188 @@
           </div>
         </div>
       </aside>
-      <main class="main__view"></main>
+      <main class="main__view">
+        <header class="main__header">
+          <button class="btn">EFFETTUA L'UPGRADE</button>
+        </header>
+        <div class="main__body">
+          <nav class="flex-center">
+            <ul class="playlist__filters">
+              <li class="active">
+                <button class="btn muted-text">IN EVIDENZA</button>
+              </li>
+              <li>
+                <button class="btn muted-text">PODCAST</button>
+              </li>
+              <li>
+                <button class="btn muted-text">CLASSIFICHE</button>
+              </li>
+              <li>
+                <button class="btn muted-text">GENERIRI E MOOD</button>
+              </li>
+              <li>
+                <button class="btn muted-text">NUOVE USCITE</button>
+              </li>
+              <li>
+                <button class="btn muted-text">SCOPRI</button>
+              </li>
+            </ul>
+          </nav>
+          <section class="playlists__container playlists__recently__played">
+            <h1>Recently played</h1>
+            <ul>
+              <li>
+                <figure>
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img
+                    src="../public/imgs/metal_lifting.jpg"
+                    alt="metal-lifting-img"
+                  />
+                </figure>
+                <strong class="text-center">Heavy Metal</strong>
+                <p class="muted-text text-center playlist__author">Subtitle</p>
+              </li>
+              <li>
+                <figure class="playlist__thumbnail">
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img
+                    src="../public/imgs/stranger.jpeg"
+                    alt="stranger-things-img"
+                  />
+                </figure>
+                <strong class="text-center"
+                  >Stranger Things Vol. 1 (a Netflix Original Series
+                  Soundtrack)</strong
+                >
+                <p class="muted-text text-center playlist__author">
+                  Kyle Dixon e Michael Stein
+                </p>
+              </li>
+              <li>
+                <figure class="playlist__thumbnail">
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img
+                    src="../public/imgs/aquietplace.jpeg"
+                    alt="aquietplace-img"
+                  />
+                </figure>
+                <strong class="text-center">A quiet place</strong>
+                <p class="muted-text text-center playlist__author">Subtitle</p>
+              </li>
+              <li>
+                <figure class="playlist__thumbnail">
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img
+                    src="../public/imgs/split.jpeg"
+                    alt="metal-lifting-img"
+                  />
+                </figure>
+                <strong class="text-center">Heavy Metal</strong>
+                <p class="muted-text text-center playlist__author">Subtitle</p>
+              </li>
+              <li>
+                <figure class="playlist__thumbnail">
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img src="../public/imgs/cure.jpeg" alt="metal-lifting-img" />
+                </figure>
+                <strong class="text-center">Heavy Metal</strong>
+                <p class="muted-text text-center playlist__author">Subtitle</p>
+              </li>
+              <li>
+                <figure class="playlist__thumbnail">
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img
+                    src="../public/imgs/sinister.jpeg"
+                    alt="metal-lifting-img"
+                  />
+                </figure>
+                <strong class="text-center">Heavy Metal</strong>
+                <p class="muted-text text-center playlist__author">Subtitle</p>
+              </li>
+            </ul>
+          </section>
+          <section class="playlists__container playlists__created">
+            <h1>Creato per John Doe</h1>
+            <p class="muted-text">
+              Piu ascolti, piu accurati saranno i suggerimenti
+            </p>
+            <ul>
+              <li>
+                <figure>
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img
+                    src="../public/imgs/radar.jpeg"
+                    alt="spotify-radar-img"
+                  />
+                </figure>
+                <strong class="text-center">Release Radar</strong>
+              </li>
+              <li>
+                <figure>
+                  <div class="flex-center">
+                    <button class="btn">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                  <img
+                    src="../public/imgs/player_left.jpg"
+                    alt="daily-mix-img"
+                  />
+                </figure>
+                <strong class="text-center">Daily mix 1</strong>
+              </li>
+            </ul>
+          </section>
+          <section class="playlists__container popolar__artists">
+            <h1>Artisti piu popolari</h1>
+            <p class="muted-text">
+              Piu ascolti, piu accurati saranno i suggerimenti
+            </p>
+            <ul>
+              <li>
+                <figure>
+                  <img src="../public/imgs/youg.jpeg" alt="youg-img" />
+                </figure>
+                <strong class="text-center">Lana del rey</strong>
+              </li>
+              <li>
+                <figure>
+                  <img src="../public/imgs/einaudi.jpeg" alt="einaudi-img" />
+                </figure>
+                <strong class="text-center">Einaudi</strong>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
       <aside class="aside__bottom player flex-between">
         <div class="col now__playing__song flex-center">
           <figure class="song__thumbnail">
