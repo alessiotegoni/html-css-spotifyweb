@@ -20,18 +20,38 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Magazine", sans-serif;
+  color: var(--white-color);
+}
+
+:root {
+  --primary-color: #1ed760;
+
+  --black-color: #000;
+  --white-color: #fff;
+  --muted--color: #797c80;
+
+  --player-bg: #282828;
+  --main-bg: #141922;
+}
+
+img {
+  max-width: 100%;
+}
+
+i {
+  font-size: 1.5rem;
 }
 
 .btn {
+  display: block;
+  cursor: pointer;
   background-color: transparent;
   outline: 0;
   border: 0;
 }
 
-.hero {
-  min-height: 100vh;
-  display: grid;
-  grid-area: "aside__left main__view" "aside__bottom aside__bottom";
+.muted-text {
+  color: var(--muted--color);
 }
 
 .flex-between {
@@ -42,6 +62,215 @@
 
 .flex-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress__bar {
+  cursor: pointer;
+  width: 100%;
+  height: 5px;
+  background-color: var(--muted--color);
+  border-radius: 10px;
+}
+
+.progress__bar__inner {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+
+.progress__bar__radio {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: var(--white-color);
+  transition: 0.5s ease;
+}
+
+.progress__bar:hover .progress__bar__radio {
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "aside__left main__view"
+    "aside__bottom aside__bottom";
+  grid-template-columns: 230px auto;
+}
+
+.aside__left {
+  grid-area: aside__left;
+  width: 230px;
+  background-color: var(--black-color);
+}
+
+.main__view {
+  grid-area: main__view;
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-color: var(--main-bg);
+}
+
+.aside__bottom {
+  grid-area: aside__bottom;
+  height: 90px;
+  background-color: var(--player-bg);
+  padding: 0 10px;
+  gap: 2rem;
+}
+
+.aside__bottom p,
+.song__title,
+.aside__bottom i {
+  font-size: 0.8rem;
+}
+
+.song__album {
+  font-size: 1rem;
+}
+
+.song__progress {
+  gap: 1rem;
+}
+
+.aside__bottom .song__progress .progress__bar {
+  min-width: 100px;
+}
+
+.aside__bottom .song__thumbnail {
+  width: 40px;
+  height: 40px;
+}
+
+.aside__bottom .now__playing__song {
+  gap: 0.5rem;
+}
+
+.now__playing__song .fa-folder {
+  margin-top: 0.5rem;
+}
+
+.player__actions {
+  gap: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.player__actions i {
+  font-size: 1rem;
+}
+
+.player__actions .fa-play {
+  margin: 0 0.5rem;
+}
+
+.player__features {
+  gap: 1rem;
+}
+
+.player__features .progress__bar {
+  width: 70px;
+}
+
+@media (min-width: 640px) {
+  .aside__bottom p,
+  .song__title,
+  .aside__bottom i {
+    font-size: 1rem;
+  }
+
+  .song__album {
+    font-size: 1rem;
+  }
+
+  .song__progress {
+    gap: 1rem;
+  }
+
+  .aside__bottom .song__progress .progress__bar {
+    min-width: 150px;
+  }
+
+  .aside__bottom .song__thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+
+  .aside__bottom .now__playing__song {
+    gap: 1rem;
+  }
+
+  .now__playing__song .fa-folder {
+    margin-top: 0.5rem;
+  }
+
+  .player__actions {
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .player__actions .btn:has(.fa-play) {
+    margin: 0 1rem;
+  }
+
+  .player__actions i {
+    font-size: 1.3rem;
+  }
+
+  .player__actions .fa-play {
+    margin: 0 0.5rem;
+  }
+
+  .player__features {
+    gap: 1rem;
+  }
+
+}
+
+@media (min-width: 878px) {
+  .player__control {
+    flex-grow: 1;
+    max-width: 320px;
+  }
+
+  .player__features .progress__bar {
+    min-width: 120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .player__control {
+    flex-grow: 1;
+    max-width: 520px;
+  }
+
+  .player__features .progress__bar {
+    min-width: 120px;
+  }
+
+  .now__playing__song div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+  }
+
+  .btn .fa-folder {
+    margin: 0;
+  }
 }

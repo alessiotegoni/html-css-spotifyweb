@@ -8,10 +8,65 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="hero">
-        <aside class="aside__left"></aside>
-        <main class="main__view"></main>
-        <aside class="aside__bottom player"></aside>
+    <div id="root">
+      <aside class="aside__left"></aside>
+      <main class="main__view"></main>
+      <aside class="aside__bottom player flex-between">
+        <div class="col now__playing__song flex-center">
+          <figure class="song__thumbnail">
+            <img src="../public/imgs/sinister.jpeg" alt="sinister-img" />
+          </figure>
+          <div class="song__info">
+            <h3 class="song__album">Sinister</h3>
+            <strong class="muted-text song__title">Brano nome</strong>
+          </div>
+          <div class="">
+            <button class="btn">
+              <i class="fa-regular fa-heart muted-text"></i>
+            </button>
+            <button class="btn">
+              <i class="fa-regular fa-folder muted-text"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col player__control">
+          <div class="player__actions">
+            <button class="btn"><i class="fa-solid fa-repeat"></i></button>
+            <button class="btn">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button class="btn"><i class="fa-solid fa-play"></i></button>
+            <button class="btn">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+            <button class="btn">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
+          <div class="song__progress flex-center">
+            <p class="song__current">0:25</p>
+            <div class="progress__bar">
+              <div class="progress__bar__inner">
+                <button class="btn progress__bar__radio"></button>
+              </div>
+            </div>
+            <p class="song__length">4:35</p>
+          </div>
+        </div>
+        <div class="col player__features flex-center">
+          <button class="btn">
+            <i class="fa-solid fa-tv"></i>
+          </button>
+          <button class="btn">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+          <div class="progress__bar">
+            <div class="progress__bar__inner">
+              <button class="btn progress__bar__radio"></button>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
   </body>
 </html>
