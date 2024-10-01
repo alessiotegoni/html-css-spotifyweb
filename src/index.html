@@ -9,7 +9,79 @@
   </head>
   <body>
     <div id="root">
-      <aside class="aside__left"></aside>
+      <aside class="aside__left">
+        <div>
+          <header class="aside__left__header">
+            <img
+              src="../public/imgs/logo-small.svg"
+              alt="spotify-sm-logo"
+              class="logo-sm"
+            />
+            <img
+              src="../public/imgs/logo.svg"
+              alt="spotify-full-logo"
+              class="logo-full"
+            />
+            <ul class="aside__left__links">
+              <li>
+                <a class="btn active">
+                  <figure>
+                    <img src="../public/imgs/home.svg" alt="home-icon" />
+                    <figcaption class="muted-text">Home</figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a class="btn">
+                  <figure>
+                    <img src="../public/imgs/search.svg" alt="search-icon" />
+                    <figcaption class="muted-text">Cerca</figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a class="btn">
+                  <figure>
+                    <img src="../public/imgs/libreria.svg" alt="library-icon" />
+                    <figcaption class="muted-text">La tua libreria</figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </header>
+          <div class="aside__left__body">
+            <h4>PLAYLIST</h4>
+            <div class="create__playlist flex-center">
+              <button class="btn flex-center">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <strong class="muted-text">Crea playlist</strong>
+            </div>
+            <ul class="playlists__list">
+              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist muted-text">Nome Playlist</li>
+              <li class="playlist muted-text">Nome Playlist</li>
+            </ul>
+          </div>
+        </div>
+        <div class="aside__left__footer">
+          <button class="btn flex-center gap-1">
+            <img src="../public/imgs/download.svg" alt="download-icon" />
+            <strong class="muted-text">Installa ora</strong>
+          </button>
+          <div class="flex-center gap-1 user__profile">
+            <figure class="flex-center">
+              <img src="../public/imgs/profile.svg" alt="user-profile-img" />
+            </figure>
+            <strong>John Doe</strong>
+          </div>
+        </div>
+      </aside>
       <main class="main__view"></main>
       <aside class="aside__bottom player flex-between">
         <div class="col now__playing__song flex-center">
